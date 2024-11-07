@@ -1,6 +1,6 @@
 {
     const removeDuplicates = (arr: number[]) : number[] => {
-        let uniqueArray : number[] = []
+        let uniqueArray : any = []
 
         arr.forEach(item => {
             if(!uniqueArray.includes(item))

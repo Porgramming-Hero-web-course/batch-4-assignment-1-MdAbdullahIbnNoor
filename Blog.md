@@ -13,8 +13,8 @@ TypeScript's powerful type system helps developers write safer, more maintainabl
   - [Example](#example)
   - [2.1 What are intersection types?](#21-what-are-intersection-types)
   - [2.2 Why Intersection Types are Useful](#22-why-intersection-types-are-useful)
-  - [Example:](#example-1)
-  - [Conclusion](#conclusion)
+  - [2.3 Example:](#23-example)
+  - [3. Conclusion](#3-conclusion)
 
 ---
 
@@ -92,7 +92,7 @@ Key advantages of intersection types:
 - **Reusability**: With intersection types, you may design reusable types that combine many roles or attributes.
 - Intersections improve code organization by combining types and reducing redundancy.
   
-## Example:
+## 2.3 Example:
 - **Combining Types for Flexible Objects**: Intersection types are useful for creating types that represent multiple roles or states.
 
 ```typescript
@@ -114,7 +114,7 @@ const fullStackDeveloper : FullStackDeveloper = {
 }
 ```
 
-## Conclusion
+## 3. Conclusion
 TypeScript's union and intersection types are useful tools for managing complicated types in a safe and flexible manner. Union types allow variables to include values of several types, which improves type safety in flexible contexts. Meanwhile, intersection types let developers to design objects that satisfy several type criteria, making them indispensable for representing data with complicated structures.
 
 Both of these types contribute to TypeScript's comprehensive type-checking mechanism, which makes it simpler to detect problems during build time and results in cleaner, more maintainable code. Understanding and using union and intersection types will help you advance your TypeScript abilities, whether you're developing a tiny application or a huge system.

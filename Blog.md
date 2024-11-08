@@ -25,5 +25,6 @@ To create a union type, use the pipe symbol (`|`) between the types:
 let value: string | number;
 value = "Hello";  // Valid
 value = 42;       // Also valid
+```
 
 ### In this case, userId can either be a string or a number. This is useful when you have multiple functions with different parameter types but similar functionality.

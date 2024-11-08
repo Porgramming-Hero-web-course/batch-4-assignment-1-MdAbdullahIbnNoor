@@ -10,7 +10,7 @@ TypeScript's powerful type system helps developers write safer, more maintainabl
     - [1.2.1. Syntax](#121-syntax)
   - [1.3. Why Union Types are Important](#13-why-union-types-are-important)
   - [1.3.1 Key Benefits of Union Types:](#131-key-benefits-of-union-types)
-  - [](#)
+  - [Example](#example)
 
 ---
 
@@ -37,4 +37,16 @@ Union types are critical for improving type safety in scenarios where a variable
 - **Enhanced Type Checking**: TypeScript will still validate each possible type, alerting you to invalid type usage.
 - **Improved Readability**: Union types make it clear that a value is expected to be one of a specific set of types.
   
-## 
+## Example
+
+the following variable is of type number or string:
+```typescript
+let result: number | string;
+result = 10; // OK
+result = 'Hi'; // also OK
+result = false; // a boolean value, not OK
+```
+
+A union type describes a value that can be one of several types, not just two. For example number | string | boolean is the type of a value that can be a number, a string, or a boolean.
+
+Back to the `add()` function example, you can change the types of parameters from the any to a union like this:
